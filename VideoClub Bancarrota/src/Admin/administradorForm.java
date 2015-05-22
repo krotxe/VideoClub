@@ -1,3 +1,5 @@
+package Admin;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -40,9 +42,7 @@ public class administradorForm extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("VideoClub Bancarrota -- Administrador");
         setAlwaysOnTop(true);
-        setMaximumSize(new java.awt.Dimension(1080, 720));
         setMinimumSize(new java.awt.Dimension(1080, 720));
-        setPreferredSize(new java.awt.Dimension(1080, 720));
 
         jPanel1.setBackground(new java.awt.Color(0, 0, 0));
 
