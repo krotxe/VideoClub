@@ -292,6 +292,7 @@ jTable1.setModel(new javax.swing.table.DefaultTableModel(null, columnasPeliculas
             Statement s = conexion.createStatement();
             ResultSet rs = s.executeQuery("select * from peliculas");
             
+            
             while (rs.next()) {
                 Peliculas p = new Peliculas();
                 p.id = rs.getInt(1);
