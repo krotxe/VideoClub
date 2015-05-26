@@ -191,10 +191,10 @@
                       <Group type="102" attributes="0">
                           <Component id="peliculaSiguiente" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="1" max="-2" attributes="0">
-                              <Group type="102" alignment="1" attributes="0">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" attributes="0">
                                   <Component id="botonAnteriorPelicula" min="-2" pref="55" max="-2" attributes="0"/>
-                                  <EmptySpace max="32767" attributes="0"/>
+                                  <EmptySpace min="-2" pref="145" max="-2" attributes="0"/>
                                   <Component id="botonSiguientePelicula" min="-2" pref="55" max="-2" attributes="0"/>
                               </Group>
                               <Component id="peliculaSeleccionada" min="-2" max="-2" attributes="0"/>
@@ -216,7 +216,7 @@
                   <Group type="103" groupAlignment="0" max="-2" attributes="0">
                       <Component id="peliculaAnterior" max="32767" attributes="0"/>
                       <Component id="peliculaSiguiente" alignment="1" max="32767" attributes="0"/>
-                      <Component id="peliculaSeleccionada" alignment="1" max="32767" attributes="0"/>
+                      <Component id="peliculaSeleccionada" max="32767" attributes="0"/>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" max="-2" attributes="0">
@@ -257,7 +257,7 @@
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <EmptySpace min="0" pref="356" max="32767" attributes="0"/>
+                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
               </Group>
             </DimensionLayout>
           </Layout>
@@ -272,7 +272,7 @@
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                  <EmptySpace min="0" pref="356" max="32767" attributes="0"/>
               </Group>
             </DimensionLayout>
           </Layout>
@@ -304,6 +304,9 @@
             </Property>
             <Property name="text" type="java.lang.String" value="&gt;"/>
           </Properties>
+          <Events>
+            <EventHandler event="mousePressed" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="botonSiguientePeliculaMousePressed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="volverPrincipalBuscar">
           <Properties>

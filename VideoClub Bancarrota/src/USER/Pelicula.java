@@ -11,6 +11,7 @@ public class Pelicula {
     public String gender="";
     public String vote="";
     public String sinopsis="";
-    public String country="";
+    public String country ="";
+    
     
 }
