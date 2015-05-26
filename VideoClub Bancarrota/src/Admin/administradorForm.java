@@ -77,7 +77,7 @@ public class administradorForm extends javax.swing.JFrame {
                 .addGap(25, 25, 25))
         );
 
-        jPanel3.setBackground(new java.awt.Color(0, 240, 240));
+        jPanel3.setBackground(new java.awt.Color(204, 204, 204));
 
         jButton1.setText("Nuevo Usuario");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
