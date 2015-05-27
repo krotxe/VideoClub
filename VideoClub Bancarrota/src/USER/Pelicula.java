@@ -6,12 +6,10 @@ public class Pelicula {
     
     
     public int id= 0;
-    public String title="";
+    public String name="";
     public String year ="";
     public String gender="";
-    public String vote="";
+    public double vote;
     public String sinopsis="";
-    public String country ="";
-    
     
 }
