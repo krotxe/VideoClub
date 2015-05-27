@@ -451,7 +451,11 @@
                               <Component id="jLabel6" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace max="-2" attributes="0"/>
+<<<<<<< HEAD
                           <Component id="textoSinopsis" pref="221" max="32767" attributes="0"/>
+=======
+                          <Component id="textoSinopsis" pref="220" max="32767" attributes="0"/>
+>>>>>>> parent of 959ddb1... Autentificacion reparada
                           <EmptySpace max="-2" attributes="0"/>
                       </Group>
                   </Group>
