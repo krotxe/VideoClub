@@ -2,6 +2,7 @@ package USER;
 
 import java.awt.Color;
 import java.awt.Dimension;
+import java.awt.FlowLayout;
 import java.awt.Font;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
@@ -28,7 +29,7 @@ import javax.swing.RowFilter;
 
 public class UsuarioForm extends javax.swing.JFrame {
 
-    private int contador = 1;
+    private int contador = 0;
     HashMap<String, Pelicula> listaPelicula = new HashMap();
     ArrayList<String> listaNombre = new ArrayList();
     ArrayList<Integer> listaDni = new ArrayList();
@@ -44,7 +45,6 @@ public class UsuarioForm extends javax.swing.JFrame {
         muestraInicio();
         conectaBase();
         conectaBase2();
-        etiquetaTodo();
 
     }
 
@@ -83,16 +83,7 @@ public class UsuarioForm extends javax.swing.JFrame {
         }
 
     }
-    private void etiquetaTodo() {
-        Pelicula p = listaPelicula.get(String.valueOf(contador));
-        textoAño.setText(p.year);
-        textoGenero.setText(p.gender);
-        textoPais.setText(p.country);
-        textoSinopsis.setText(p.sinopsis);
-        notaPelicula.setText(p.vote);
-        
-    }
-
+    
     
 
     private void conectaBase2() {
@@ -785,7 +776,16 @@ public class UsuarioForm extends javax.swing.JFrame {
     }//GEN-LAST:event_vueltaPrincipalPeliculaMousePressed
 
     private void botonSiguientePeliculaMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botonSiguientePeliculaMousePressed
-        contador++;
+        contador ++;
+        
+        Pelicula p = listaPelicula.get(String.valueOf(contador));
+        textoAño.setText(p.year);
+        textoGenero.setText(p.gender);
+        textoPais.setText(p.country);
+        textoSinopsis.setText(p.sinopsis);
+        notaPelicula.setText(p.vote);
+        
+        System.out.println(String.valueOf(contador));
     }//GEN-LAST:event_botonSiguientePeliculaMousePressed
 
     /**
